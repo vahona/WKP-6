@@ -61,14 +61,14 @@ for( let i = 0; i < foods.length; i--){
       </div>
       <div class="contain_food">
         <ul class="type_of_food">
-          <li>${foods[0].title}🔥</li>
+          <li>${foods[i].title}🔥</li>
           <li>${foods[1].title}🔥🍃</li>
           <li>${foods[2].title}</li>
           <li>${foods[3].title}🍃</li>
           <li>${foods[4].title}🍃</li>
         </ul>
         <ul class="price_of_foo">
-          <li>${foods[0].price}Ar</li>
+          <li>${foods[i].price}Ar</li>
           <li>${foods[1].price}Ar</li>
           <li>${foods[2].price}Ar</li>
           <li>${foods[3].price}Ar</li>
