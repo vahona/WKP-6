@@ -1,0 +1,42 @@
+body {
+    
+}
+
+
+li {
+    list-style: none;
+    margin: 1rem;
+}
+
+.contain_food {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.choice {
+    display: flex;
+}
+
+
+.check_preference {
+   margin-block-start: 1rem;
+}
+
+.choice {
+    margin-inline-start: 3.5rem;
+}
+
+.check_preference {
+    margin-inline-start: 3rem;
+}
+
+h1 {
+    text-align: center;
+    padding-block-start: 1rem;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: gainsboro;
+}
