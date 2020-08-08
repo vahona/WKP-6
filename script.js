@@ -41,9 +41,13 @@ const foods = [
 
 // Grabe the body
 
+// const foodCard = () => {
+
 const cardbody = document.querySelector('body');
 
 // Create html for the card form
+
+for( let i = 0; i < foods.length; i--){
 
   const myHtml = ` <div class="container ">
     <h1>Foof list</h1>
@@ -57,18 +61,18 @@ const cardbody = document.querySelector('body');
       </div>
       <div class="contain_food">
         <ul class="type_of_food">
-          <li>Ravitoto🔥</li>
-          <li>Pasta🔥🍃</li>
-          <li>Burger</li>
-          <li>Rice and leaves🍃</li>
-          <li>Mofogasy🍃</li>
+          <li>${foods[i].title}🔥</li>
+          <li>${foods[1].title}🔥🍃</li>
+          <li>${foods[2].title}</li>
+          <li>${foods[3].title}🍃</li>
+          <li>${foods[4].title}🍃</li>
         </ul>
         <ul class="price_of_foo">
-          <li>5000Ar</li>
-          <li>4000Ar</li>
-          <li>5000Ar</li>
-          <li>2000Ar</li>
-          <li>500Ar</li>
+          <li>${foods[i].price}Ar</li>
+          <li>${foods[1].price}Ar</li>
+          <li>${foods[2].price}Ar</li>
+          <li>${foods[3].price}Ar</li>
+          <li>${foods[4].price}Ar</li>
         </ul>
         <ul class="add_foo">
           <li><button class=" button_add ravitoto_add">Add</button></li>
@@ -84,4 +88,5 @@ const cardbody = document.querySelector('body');
 
   cardbody.insertAdjacentHTML('beforeend', myHtml);
 
-
+}; 
+// }
