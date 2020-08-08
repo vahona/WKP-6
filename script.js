@@ -61,14 +61,14 @@ for( let i = 0; i < foods.length; i--){
       </div>
       <div class="contain_food">
         <ul class="type_of_food">
-          <li>${foods[i].title}🔥</li>
+          <li>${foods[0].title}🔥</li>
           <li>${foods[1].title}🔥🍃</li>
           <li>${foods[2].title}</li>
           <li>${foods[3].title}🍃</li>
           <li>${foods[4].title}🍃</li>
         </ul>
         <ul class="price_of_foo">
-          <li>${foods[i].price}Ar</li>
+          <li>${foods[0].price}Ar</li>
           <li>${foods[1].price}Ar</li>
           <li>${foods[2].price}Ar</li>
           <li>${foods[3].price}Ar</li>
@@ -89,4 +89,42 @@ for( let i = 0; i < foods.length; i--){
   cardbody.insertAdjacentHTML('beforeend', myHtml);
 
 }; 
-// }
+
+
+
+// Html for your order food
+
+const yourOrder = () => {
+
+const orderHTML = ` <div class="order-container ">
+      <h1>Your order</h1>
+      <ul class="type_of_food">
+        <li></li>
+      </ul>
+      <ul class="price_times">
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class="price_times">
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <button class="confirm-button">Confirm order</button>`;
+
+  cardbody.insertAdjacentHTML('beforeend', orderHTML);
+
+}
+
+// Function for the the button
+
+const clickButton = (e) => {
+  if (e.target.matches('.button_add ravitoto_add')) {
+    const raviButton = e.target.closest('.order-cont');
+    yourOrder(raviButton);
+  }
+}
+
+    // Event listener for the button add
+
+window.addEventListener('click', handleBtnClick);

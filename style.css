@@ -1,6 +1,4 @@
-body {
-    display: flex;
-}
+
 
 
 li {
@@ -13,9 +11,9 @@ li {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.choice {
+/* .choice {
     display: flex;
-}
+} */
 
 
 .check_preference {
@@ -39,4 +37,19 @@ h1 {
     width: 600px;
     height: 400px;
     background-color: gainsboro;
+}
+
+.confirm-button {
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-block-start: 1rem;
+}
+
+.order-container {
+     width: 600px;
+    height: 400px;
+    background-color: gainsboro;
+    margin-inline-end: 1rem;
 }
